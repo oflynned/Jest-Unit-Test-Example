@@ -5,10 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "jest --config jest.base.config.js",
-    "test:unit": "jest  --config jest.unit.config.js",
-    "test:integration": "jest --config jest.integration.config.js",
-    "test:watch": "jest --config jest.base.config.js --watchAll"
+    "test": "./node_modules/.bin/jest --config jest.base.config.js",
+    "test:watch": "./node_modules/.bin/jest --config jest.base.config.js --watchAll"
   },
   "keywords": [],
   "author": "",

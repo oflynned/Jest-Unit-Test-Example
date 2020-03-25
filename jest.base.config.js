@@ -10,6 +10,6 @@ module.exports = {
     collectCoverageFrom: ["./src/"],
     moduleFileExtensions: ["ts", "js", "json"],
     coverageDirectory: "./coverage",
-    testMatch: ["**/*.{unit,integration}.ts"],
+    testMatch: ["**/*.test.ts"],
     verbose: true
 };
