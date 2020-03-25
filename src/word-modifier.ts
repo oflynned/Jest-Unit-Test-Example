@@ -5,3 +5,16 @@ export const intensifyPhrase = (phrase: string): string => {
 
     return `${phrase.toUpperCase()}!!!`;
 };
+
+export const asyncFetchData = async (delay: number): Promise<string> => {
+    return new Promise((resolve, reject) => {
+        if (delay < 0) {
+            reject(new Error(''));
+            return;
+        }
+
+        setTimeout(() => {
+            resolve('cool');
+        }, delay)
+    })
+};

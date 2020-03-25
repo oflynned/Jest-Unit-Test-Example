@@ -1,4 +1,4 @@
-import {intensifyPhrase} from "./word-modifier";
+import {intensifyPhrase, asyncFetchData} from "./word-modifier";
 
 describe("#intensityPhrase", () => {
     it('should blah blah', () => {
@@ -21,5 +21,11 @@ describe("#intensityPhrase", () => {
     it('should transform to uppercase with more than one character', () => {
         const actual = intensifyPhrase("hello world");
         expect(/^[a-z]+/.test(actual)).toBeFalsy();
+    });
+});
+
+describe('#asyncFetchData', () => {
+    it('should reject when delay < 0', async ()  => {
+        await expect(asyncFetchData(-1)).rejects.toThrowError('')
     });
 });
