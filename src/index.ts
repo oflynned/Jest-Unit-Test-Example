@@ -1,7 +1,7 @@
-import intensify from "./intensify";
+import {intensifyPhrase} from "./word-modifier";
 
 (async() => {
-    console.log(intensify.intensifyPhrase("cool"));
+    console.log(intensifyPhrase("cool"));
 
     // cool -> COOL!!!
 })();
